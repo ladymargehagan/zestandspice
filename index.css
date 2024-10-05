@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+** {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensure the image fits within the container */
+    background-image: url("background.png");
+    background-repeat: no-repeat; 
+    background-color: white;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures logo and links are vertically aligned */
+    padding: 10px;
+    font-family: "Libre Baskerville", sans-serif; 
+    text-align: left;
+    height: 100px; /* Add height to help with alignment */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.auth-links {
+    display: flex;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-right: 3%;
+    align-items: center; /* Ensures the login/signup links align vertically */
+}
+
+.link {
+    text-decoration: none;
+    color: #6B4226; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 20px;
+    text-align: left; 
+    width: 50%; 
+    margin-left: 50px; 
+}
+
+h1 {
+    font-size: 60px;
+    font-style: bold;
+    color: #4B6A47;
+}
+
+h3 {
+    margin-left: 0;
+    font-family: 'Montserrat', sans-serif; 
+    padding-left: 0;
+    font-size: 20px;
+    color: #5C504A;
+}
+
+.button {
+    width: 30%; 
+    padding: 15px;
+    background-color:#FF6F61;
+    color: #6B4226; 
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #CC7A00; 
+}

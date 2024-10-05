@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Libre Baskerville", sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px; 
+    height: 100%;
+    background-color: #4B6A47; 
+    color: whitesmoke;
+    padding: 20px 0;
+}
+
+.sidebar header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px; 
+    transition: .5s;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li:hover a {
+    padding-left : 10px; 
+}
+
+.main {
+    margin-left: 220px; 
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 28%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.user-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 28%; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+.sub-box h2 {
+    font-size: 72px; 
+    margin: 0;
+    text-align: center;
+    color: #1a2b3c;
+}
+
+.user-box h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #1a2b3c;
+}
+
+.sub-box h3, .user-box p {
+    margin: 10px 0 0;
+    color: #667;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.chart-box {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 93%; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chart-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bar {
+    width: 20%;
+    background-color: #FF6F61;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 5px 5px 0 0;
+    margin: 0 10px;
+}
+
+/* for tablets */
+@media (max-width: 1024px) {
+    .main {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .sub-box, .user-box {
+        width: 45%; /* Adjust the width for better layout on medium screens */
+        margin-bottom: 20px;
+    }
+
+    .chart-box {
+        width: 100%; /* Make the chart take up the entire width */
+    }
+
+    .bar {
+        width: 18%; /* Reduce the width of each bar in the chart */
+    }
+}

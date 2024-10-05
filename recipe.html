@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <title> Recipe Management </title>
+    <link rel = "stylesheet" href = "user.css">
+</head>
+<body> 
+
+    <div class = "container">
+        <div class = "sidebar">
+
+            <header>
+                <img src = "zestandspicewhite.png" alt = "logo" class = "logo">
+            </header>
+
+            <ul>
+                <li><a href = "dashboard.html"> Dashboard </a></li>
+                <li><a href = "user.html"> Users </a></li>
+                <li><a href = "recipe.html"> Recipes </a></li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <form id="recipe-form">
+                <label for = "title"> Recipe Title: </label>
+                <input type = "text" id = "title" required>
+                
+                <label for = "author"> Author: </label>
+                <input type = "text" id = "author" required>
+                
+                <label for = "date"> Date Created: </label>
+                <input type = "date" id = "date" required>
+                
+                <button type = "submit"> Add Recipe </button>
+            </form>
+        </div>
+        
+    
+        <table style = "width: 100%"> 
+            <thead>
+                <tr class = "table-header">
+                    <th> ID </th>
+                    <th> Title </th>
+                    <th> Author </th>
+                    <th> Date Created </th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            
+            <tbody class = "recipe-info">
+                <tr>
+                    <td> 1 </td>
+                    <td> Steamed Dumplings (Momos) </td>
+                    <td> Marge Hagan </td>
+                    <td> 2024-10-01 </td>
+                    <td> 
+                        <button> Read </button>
+                        <button> Update </button>
+                        <button> Delete </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> Palak Paneer </td>
+                    <td> John Doe </td>
+                    <td> 2024-10-02 </td>
+                    <td> 
+                        <button> Read </button>
+                        <button> Update </button>
+                        <button> Delete </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> Mandi Rice with Meat </td>
+                    <td> Jane Smith </td>
+                    <td> 2024-10-03 </td>
+                    <td> 
+                        <button> Read </button>
+                        <button> Update </button>
+                        <button> Delete </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 4 </td>
+                    <td> Jollof Rice with Grilled Chicken </td>
+                    <td> Tom Johnson </td>
+                    <td> 2024-10-04 </td>
+                    <td> 
+                        <button> Read </button>
+                        <button> Update </button>
+                        <button> Delete </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 5 </td>
+                    <td> Butter Chicken </td>
+                    <td> Lisa Wong </td>
+                    <td> 2024-10-05 </td>
+                    <td> 
+                        <button> Read </button>
+                        <button> Update </button>
+                        <button> Delete </button>
+                    </td>
+                </tr>
+            </tbody>
+            
+         </table>
+    </div>
+</body>
+</html>
